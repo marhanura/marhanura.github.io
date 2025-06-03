@@ -4,107 +4,1159 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
     <link href="./assets/icon.png" rel="icon" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Marha's Portfolio</title>
   </head>
   <body>
-    <div class="flex items-center justify-center h-screen w-full bg-gray-200">
-      <!-- Navbar Start -->
-      <nav
-        class="fixed z-25 top-0 w-full border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700"
+    <!-- Navbar Start -->
+    <!-- <nav
+      class="fixed z-10 top-0 w-full border-gray-200 bg-gray-50 dark:bg-gray-100 dark:border-gray-700"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-        >
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="./assets/icon.png" class="h-8 w-8" alt="My Logo" />
-            <span
-              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-              >Portfolio</span
-            >
-          </a>
-          <button
-            data-collapse-toggle="navbar-solid-bg"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-solid-bg"
-            aria-expanded="false"
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="./assets/icon.png" class="h-8 w-8" alt="My Logo" />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black"
+            >Portfolio</span
           >
-            <span class="sr-only">Open main menu</span>
+        </a>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+          <ul
+            class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-white md:dark:bg-transparent dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/marhanura"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <!-- Navbar End -->
+
+    <!-- Profile Section -->
+    <div class="stars"></div>
+    <div class="shooting-star"></div>
+    <div class="stars"></div>
+    <div class="shooting-star"></div>
+    <div class="stars"></div>
+    <div class="shooting-star"></div>
+    <section
+      id="home"
+      class="flex flex-col items-center justify-center h-screen w-full"
+    >
+      <div data-dial-init class="fixed top-6 start-6 group z-20">
+        <a
+          type="button"
+          href="#"
+          data-dial-toggle="speed-dial-menu-top-left"
+          aria-controls="speed-dial-menu-top-left"
+          aria-expanded="false"
+          class="group relative flex items-center justify-center text-white rounded-full w-14 h-14"
+        >
+          <img
+            src="./assets/icon.png"
+            class="absolute transition duration-300 group-hover:opacity-0"
+          />
+          <div
+            class="absolute transition duration-300 bg-[#313866] opacity-0 group-hover:opacity-100 rounded-full w-full h-full flex items-center justify-center"
+          >
+            <p class="text-white m-auto text-2xl">M</p>
+          </div>
+          <span class="sr-only">Open actions menu</span>
+        </a>
+        <div
+          id="speed-dial-menu-top-left"
+          class="flex flex-col items-center hidden mt-4 space-y-2"
+        >
+          <a
+            type="button"
+            href="#projects"
+            data-tooltip-target="tooltip-projects"
+            data-tooltip-placement="left"
+            class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
+          >
             <svg
-              class="w-5 h-5"
+              class="w-6 h-6 text-white dark:text-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9 2.221V7H4.221a2 2 0 0 1 .365-.5L8.5 2.586A2 2 0 0 1 9 2.22ZM11 2v5a2 2 0 0 1-2 2H4v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-7Zm-.293 9.293a1 1 0 0 1 0 1.414L9.414 14l1.293 1.293a1 1 0 0 1-1.414 1.414l-2-2a1 1 0 0 1 0-1.414l2-2a1 1 0 0 1 1.414 0Zm2.586 1.414a1 1 0 0 1 1.414-1.414l2 2a1 1 0 0 1 0 1.414l-2 2a1 1 0 0 1-1.414-1.414L14.586 14l-1.293-1.293Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span class="sr-only">Projects</span>
+          </a>
+          <div
+            id="tooltip-projects"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+          >
+            Projects
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <a
+            type="button"
+            href="#skill"
+            data-tooltip-target="tooltip-skill"
+            data-tooltip-placement="left"
+            class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
+          >
+            <svg
+              class="w-6 h-6 text-white dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
               fill="none"
-              viewBox="0 0 17 14"
+              viewBox="0 0 24 24"
             >
               <path
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
+                d="m8 8-4 4 4 4m8 0 4-4-4-4m-2-3-4 14"
               />
             </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
-            <ul
-              class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700"
+
+            <span class="sr-only">Skills</span>
+          </a>
+          <div
+            id="tooltip-skill"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+          >
+            Skills
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <a
+            type="button"
+            href="#contact"
+            data-tooltip-target="tooltip-contact"
+            data-tooltip-placement="left"
+            class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-xs dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400"
+          >
+            <svg
+              class="w-6 h-6 text-white dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
             >
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                  aria-current="page"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Pricing</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+              <path
+                fill-rule="evenodd"
+                d="M4 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4Zm10 5a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm-8-5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm1.942 4a3 3 0 0 0-2.847 2.051l-.044.133-.004.012c-.042.126-.055.167-.042.195.006.013.02.023.038.039.032.025.08.064.146.155A1 1 0 0 0 6 17h6a1 1 0 0 0 .811-.415.713.713 0 0 1 .146-.155c.019-.016.031-.026.038-.04.014-.027 0-.068-.042-.194l-.004-.012-.044-.133A3 3 0 0 0 10.059 14H7.942Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span class="sr-only">Contact</span>
+          </a>
+          <div
+            id="tooltip-contact"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+          >
+            Contact
+            <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
         </div>
-      </nav>
+      </div>
 
-      <!-- Navbar End -->
-
-      <div>
-        <h1 class="mb-4 text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-          <span
-            class="text-transparent text-3xl font-bold bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
-            >Hello!</span
-          >
-        </h1>
+      <div class="container h-screen text-center pt-24">
         <p
-          class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+          class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
         >
-          I am Marha Nur Amalina
+          Hello!
+        </p>
+        <p
+          class="my-5 text-2xl font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white"
+        >
+          I'm
+          <mark class="px-2 text-white bg-[#0683B3] rounded-sm">Marha</mark>
+          Nur Amalina.
+        </p>
+        <p
+          class="text-lg max-w-2xl mx-auto mt-6 text-gray-600 dark:text-gray-400"
+        >
+          Welcome to my portfolio website.
+        </p>
+        <p
+          class="text-lg max-w-2xl mx-auto mt-6 text-gray-600 dark:text-gray-400"
+        >
+          I'm passionate about creating beautiful and functional web
+          experiences.
         </p>
       </div>
-    </div>
+
+      <!--Waves -->
+      <div class="waves-container w-full">
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="#313866" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="#0683B3" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="#55ADB9" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#F3F4F6" />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">
+          Projects
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center"
+        >
+          <!-- StyleHack -->
+          <div
+            class="group relative aspect-video hover:scale-105 transition-transform duration-300 overflow-hidden rounded-lg"
+          >
+            <img
+              class="w-full h-full object-cover rounded-lg"
+              src="./assets/ss-stylehack.png"
+              alt="StyleHack"
+            />
+            <div
+              class="absolute inset-0 rounded-lg bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+            >
+              <p class="font-bold text-xl text-black">StyleHack</p>
+              <div class="flex gap-3">
+                <a
+                  href="https://stylehack.vercel.app/"
+                  class="bg-[#0683B3] hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/marhanura/stylehack"
+                  class="bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+              <div class="flex justify-center items-center gap-2 flex-wrap">
+                <img
+                  src="./assets/icon-nextjs.svg"
+                  alt="NextJS"
+                  class="h-5"
+                  data-tooltip-target="nextjs-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="nextjs-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  NextJS
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-mongodb.png"
+                  alt="MongoDB"
+                  class="h-5"
+                  data-tooltip-target="mongodb-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="mongodb-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  MongoDB
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-tailwind.png"
+                  alt="Tailwind"
+                  class="h-5"
+                  data-tooltip-target="tailwind-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="tailwind-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Tailwind CSS
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-groq.png"
+                  alt="Groq"
+                  class="h-5"
+                  data-tooltip-target="groq-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="groq-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Groq
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-langchain.png"
+                  alt="Langchain"
+                  class="h-5"
+                  data-tooltip-target="langchain-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="langchain-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Langchain
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-tavily.png"
+                  alt="Tavily"
+                  class="h-5"
+                  data-tooltip-target="tavily-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="tavily-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Tavily
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-cloudinary.png"
+                  alt="Cloudinary"
+                  class="h-5"
+                  data-tooltip-target="cloudinary-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="cloudinary-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Cloudinary
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-midtrans-notext.png"
+                  alt="Midtrans"
+                  class="h-5"
+                  data-tooltip-target="midtrans-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="midtrans-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Midtrans
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CottonBud -->
+          <div
+            class="group relative aspect-video hover:scale-105 transition-transform duration-300 overflow-hidden rounded-lg"
+          >
+            <img
+              class="w-full h-full object-cover rounded-lg"
+              src="./assets/ss-cottonbud.png"
+              alt="CottonBud"
+            />
+            <div
+              class="absolute inset-0 rounded-lg bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+            >
+              <p class="font-bold text-xl text-black">CottonBud</p>
+              <div class="flex gap-3">
+                <a
+                  href="https://cottonbudgc.vercel.app/"
+                  class="bg-[#0683B3] hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/marhanura/cottonbud"
+                  class="bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+
+              <div class="flex justify-center items-center gap-2 flex-wrap">
+                <img
+                  src="./assets/icon-nextjs.svg"
+                  alt="NextJS"
+                  class="h-5"
+                  data-tooltip-target="nextjs-2"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="nextjs-2"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  NextJS
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-mongodb.png"
+                  alt="MongoDB"
+                  class="h-5"
+                  data-tooltip-target="mongodb-2"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="mongodb-2"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  MongoDB
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-tailwind.png"
+                  alt="Tailwind"
+                  class="h-5"
+                  data-tooltip-target="tailwind-2"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="tailwind-2"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Tailwind CSS
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Zehat -->
+          <div
+            class="group relative aspect-video hover:scale-105 transition-transform duration-300 overflow-hidden rounded-lg"
+          >
+            <img
+              class="w-full h-full object-cover rounded-lg"
+              src="./assets/ss-zehat.png"
+              alt="Third Project"
+            />
+            <div
+              class="absolute inset-0 rounded-lg bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+            >
+              <p class="font-bold text-xl text-black">Zehat</p>
+              <div class="flex gap-3">
+                <a
+                  href="https://zehat-ip.web.app/"
+                  class="bg-[#0683B3] hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/marhanura/IP-HCK81"
+                  class="bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+
+              <div class="flex justify-center items-center gap-2 flex-wrap">
+                <img
+                  src="./assets/icon-reactjs.webp"
+                  alt="ReactJS"
+                  class="h-5"
+                  data-tooltip-target="reactjs-2"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="reactjs-2"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  ReactJS
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-vite.png"
+                  alt="Vite"
+                  class="h-5"
+                  data-tooltip-target="vite-2"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="vite-2"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Vite
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-express.png"
+                  alt="Express"
+                  class="h-5"
+                  data-tooltip-target="express-2"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="express-2"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Express
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-gemini.png"
+                  alt="Gemini AI"
+                  class="h-5"
+                  data-tooltip-target="gemini-2"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="gemini-2"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Gemini AI
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-aws.webp"
+                  alt="AWS"
+                  class="h-5"
+                  data-tooltip-target="aws-2"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="aws-2"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  AWS
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-firebase.png"
+                  alt="Firebase"
+                  class="h-5"
+                  data-tooltip-target="firebase-2"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="firebase-2"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Firebase
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-tailwind.png"
+                  alt="Tailwind"
+                  class="h-5"
+                  data-tooltip-target="tailwind-3"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="tailwind-3"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Tailwind CSS
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-sequelize.png"
+                  alt="Sequelize"
+                  class="h-5"
+                  data-tooltip-target="sequelize"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="sequelize"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Sequelize
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-postgresql.png"
+                  alt="PostgreSQL"
+                  class="h-5"
+                  data-tooltip-target="postgresql"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="postgresql"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  PostgreSQL
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thumblr -->
+          <div
+            class="group relative aspect-video hover:scale-105 transition-transform duration-300 overflow-hidden rounded-lg"
+          >
+            <img
+              class="w-full h-full object-cover rounded-lg"
+              src="./assets/ss-thumblr.png"
+              alt="Third Project"
+            />
+            <div
+              class="absolute inset-0 rounded-lg bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+            >
+              <p class="font-bold text-xl text-black">Thumblr</p>
+              <div class="flex gap-3">
+                <a
+                  href="https://expo.dev/preview/update?message=Fix%3A%20Navigate%20to%20user&updateRuntimeVersion=1.0.0&createdAt=2025-04-20T14%3A09%3A45.355Z&slug=exp&projectId=0783494a-8006-4ab3-85c0-1f373b9ad91a&group=39bab19a-5a7a-4c07-87a5-c5d7be7b1e7c"
+                  class="bg-[#0683B3] hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/marhanura/thumblr"
+                  class="bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code</a
+                >
+              </div>
+
+              <div class="flex justify-center items-center gap-2 flex-wrap">
+                <img
+                  src="./assets/icon-react-native.png"
+                  alt="React Native"
+                  class="h-5"
+                  data-tooltip-target="react-native"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="react-native"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  React Native
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-expo.png"
+                  alt="Expo"
+                  class="h-5"
+                  data-tooltip-target="expo"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="expo"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Expo
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-apollo.svg"
+                  alt="Apollo Server & Client"
+                  class="h-5"
+                  data-tooltip-target="apollo"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="apollo"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Apollo Server & Client
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-mongodb.png"
+                  alt="MongoDB"
+                  class="h-5"
+                  data-tooltip-target="mongodb-3"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="mongodb-3"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  MongoDB
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-redis.svg"
+                  alt="Redis"
+                  class="h-5"
+                  data-tooltip-target="redis"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="redis"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Redis
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Yahoot -->
+          <div
+            class="group relative aspect-video hover:scale-105 transition-transform duration-300 overflow-hidden rounded-lg"
+          >
+            <img
+              class="w-full h-full object-cover rounded-lg"
+              src="./assets/ss-yahoot.png"
+              alt="Third Project"
+            />
+            <div
+              class="absolute inset-0 rounded-lg bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+            >
+              <p class="font-bold text-xl text-black">Yahoot</p>
+              <div class="flex gap-3">
+                <a
+                  href="https://tomsushi81.web.app/"
+                  class="bg-[#0683B3] hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/hck81-TomSushi"
+                  class="bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+
+              <!-- Yahoot Project Tech Stack -->
+              <div class="flex justify-center items-center gap-2 flex-wrap">
+                <img
+                  src="./assets/icon-reactjs.webp"
+                  alt="ReactJS"
+                  class="h-5"
+                  data-tooltip-target="reactjs-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="reactjs-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  ReactJS
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-vite.png"
+                  alt="Vite"
+                  class="h-5"
+                  data-tooltip-target="vite-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="vite-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Vite
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-express.png"
+                  alt="Express"
+                  class="h-5"
+                  data-tooltip-target="express-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="express-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Express
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-gemini.png"
+                  alt="Gemini AI"
+                  class="h-5"
+                  data-tooltip-target="gemini-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="gemini-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Gemini AI
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-aws.webp"
+                  alt="AWS"
+                  class="h-5"
+                  data-tooltip-target="aws-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="aws-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  AWS
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-firebase.png"
+                  alt="Firebase"
+                  class="h-5"
+                  data-tooltip-target="firebase-1"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="firebase-1"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Firebase
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <img
+                  src="./assets/icon-socketio.webp"
+                  alt="Socket.io"
+                  class="h-5"
+                  data-tooltip-target="socketio"
+                  data-tooltip-placement="bottom"
+                />
+                <div
+                  id="socketio"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Socket.io
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section id="skill" class="py-16 bg-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900">Skills</h2>
+        <div class="flex flex-row my-5">
+          <img src="./assets/icon-reactjs.webp" alt="ReactJS" class="size-10" />
+          <img
+            src="./assets/icon-react-native.png"
+            alt="React Native"
+            class="size-10"
+          />
+          <img src="./assets/icon-nextjs.svg" alt="NextJS" class="size-10" />
+        </div>
+        <p>More to come!</p>
+      </div>
+      <!-- Carousel -->
+      <!-- <div
+        class="relative flex min-h-screen flex-col items-center justify-center"
+      >
+        <div
+          class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth"
+          style="scroll-snap-align: start"
+        >
+          <div
+            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-blue-200 md:w-[calc(33.33%-(32px/3))]"
+          >
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-8xl font-bold text-white">1</div>
+            </div>
+          </div>
+
+          <div
+            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-purple-200 md:w-[calc(33.33%-(32px/3))]"
+          >
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-8xl font-bold text-white">2</div>
+            </div>
+          </div>
+
+          <div
+            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-green-200 md:w-[calc(33.33%-(32px/3))]"
+          >
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-8xl font-bold text-white">3</div>
+            </div>
+          </div>
+
+          <div
+            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-yellow-200 md:w-[calc(33.33%-(32px/3))]"
+          >
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-8xl font-bold text-white">4</div>
+            </div>
+          </div>
+
+          <div
+            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-red-200 md:w-[calc(33.33%-(32px/3))]"
+          >
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-8xl font-bold text-white">5</div>
+            </div>
+          </div>
+
+          <div
+            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-orange-200 md:w-[calc(33.33%-(32px/3))]"
+          >
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-8xl font-bold text-white">6</div>
+            </div>
+          </div>
+
+          <div
+            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-teal-200 md:w-[calc(33.33%-(32px/3))]"
+          >
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-8xl font-bold text-white">7</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination my-4 flex gap-2">
+          <span
+            class="h-3 w-3 ease-out duration-300 rounded-full bg-black w-8"
+          ></span>
+          <span
+            class="h-3 w-3 ease-out duration-300 rounded-full bg-black"
+          ></span>
+          <span
+            class="h-3 w-3 ease-out duration-300 rounded-full bg-black"
+          ></span>
+          <span
+            class="h-3 w-3 ease-out duration-300 rounded-full bg-black"
+          ></span>
+          <span
+            class="h-3 w-3 ease-out duration-300 rounded-full bg-black"
+          ></span>
+          <span
+            class="h-3 w-3 ease-out duration-300 rounded-full bg-black md:hidden"
+          ></span>
+          <span
+            class="h-3 w-3 ease-out duration-300 rounded-full bg-black md:hidden"
+          ></span>
+        </div>
+
+        <div>
+          <button class="prev-btn bg-gray-200 p-2">Prev</button>
+          <button class="next-btn bg-gray-200 p-2">Next</button>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900">Contact</h2>
+        <div class="flex justify-center items-center gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="{1.5}"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+            />
+          </svg>
+          <span>marhanura@gmail.com</span>
+        </div>
+      </div>
+    </section>
+    <script>
+      const container = document.querySelector(".carousel");
+      const slides = document.querySelectorAll(".carousel > div");
+      const dots = document.querySelectorAll(".pagination > span");
+      const prevBtn = document.querySelector(".prev-btn");
+      const nextBtn = document.querySelector(".next-btn");
+
+      const breakpoint = 768;
+      const slidesPerPage = 3;
+      const totalSlidesCount = slides.length;
+      // Mobile stuff
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      // Previous
+      prevBtn.addEventListener("click", () => {
+        container.scrollBy({
+          left: -slides[0].offsetWidth,
+          behavior: "smooth",
+        });
+        const centerSlideIndex = getCenterSlideIndex() - 1;
+        updateActiveDot(centerSlideIndex);
+      });
+
+      // Next
+      nextBtn.addEventListener("click", () => {
+        container.scrollBy({ left: slides[0].offsetWidth, behavior: "smooth" });
+        const centerSlideIndex = getCenterSlideIndex() + 1;
+        updateActiveDot(centerSlideIndex);
+      });
+
+      // Mobile
+      container.addEventListener("touchstart", (event) => {
+        touchStartX = event.touches[0].clientX;
+      });
+
+      container.addEventListener("touchmove", (event) => {
+        touchEndX = event.touches[0].clientX;
+      });
+
+      container.addEventListener("touchend", () => {
+        let centerSlideIndex;
+        const swipeThreshold = 50;
+
+        if (touchStartX - touchEndX > swipeThreshold) {
+          centerSlideIndex = getCenterSlideIndex() + 1;
+        } else {
+          centerSlideIndex = getCenterSlideIndex() - 1;
+        }
+
+        updateActiveDot(centerSlideIndex);
+        touchStartX = 0;
+        touchEndX = 0;
+      });
+
+      function updateActiveDot(centerSlideIndex) {
+        const isMobileView = container.offsetWidth <= breakpoint;
+        const dotsCount = isMobileView ? dots.length : dots.length - 2;
+        const slidesCount = isMobileView ? 1 : dotsCount - slidesPerPage;
+        const pageIndex = centerSlideIndex - slidesCount;
+        if (pageIndex >= 0 && pageIndex < dotsCount) {
+          dots.forEach((dot) => dot.classList.remove("w-8"));
+          dots[pageIndex].classList.add("w-8");
+        }
+      }
+
+      function getCenterSlideIndex() {
+        const slideWidth = slides[0].offsetWidth;
+        const containerWidth = container.offsetWidth;
+        const centerSlideIndex = Math.round(
+          (container.scrollLeft + Math.floor(containerWidth / 2)) / slideWidth
+        );
+        return centerSlideIndex;
+      }
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   </body>
 </html>

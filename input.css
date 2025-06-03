@@ -1,4 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import "flowbite/src/themes/default";
+@theme {
+  --font-silkscreen: "Silkscreen", sans-serif;
+  --color-custom-primary: #313866;
+  --color-custom-secondary: #0583b3;
+  --color-custom-tertiary: #55adb9;
+}
