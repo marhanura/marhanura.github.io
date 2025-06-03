@@ -19,58 +19,6 @@
     <title>Marha's Portfolio</title>
   </head>
   <body>
-    <!-- Navbar Start -->
-    <!-- <nav
-      class="fixed z-10 top-0 w-full border-gray-200 bg-gray-50 dark:bg-gray-100 dark:border-gray-700"
-    >
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="./assets/icon.png" class="h-8 w-8" alt="My Logo" />
-          <span
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black"
-            >Portfolio</span
-          >
-        </a>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
-          <ul
-            class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-white md:dark:bg-transparent dark:border-gray-700"
-          >
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#projects"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/marhanura"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Github</a
-              >
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-    <!-- Navbar End -->
-
     <!-- Profile Section -->
     <div class="stars"></div>
     <div class="shooting-star"></div>
@@ -924,7 +872,6 @@
                   Firebase
                   <div class="tooltip-arrow" data-popper-arrow></div>
                 </div>
-
                 <img
                   src="./assets/icon-socketio.webp"
                   alt="Socket.io"
@@ -951,111 +898,262 @@
     <section id="skill" class="py-16 bg-white">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-8 text-gray-900">Skills</h2>
-        <div class="flex flex-row my-5">
-          <img src="./assets/icon-reactjs.webp" alt="ReactJS" class="size-10" />
-          <img
-            src="./assets/icon-react-native.png"
-            alt="React Native"
-            class="size-10"
-          />
-          <img src="./assets/icon-nextjs.svg" alt="NextJS" class="size-10" />
+        <div class="flex flex-col my-5 gap-5">
+          <div>
+            <p class="my-3">Language:</p>
+            <div class="inline-flex rounded-md shadow-xs" role="group">
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-js.png"
+                  alt="JavaScript"
+                  class="size-10 mr-2"
+                />
+                JavaScript
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-ts.svg"
+                  alt="TypeScript"
+                  class="size-10 mr-2"
+                />
+                TypeScript
+              </button>
+            </div>
+          </div>
+          <div>
+            <p class="my-3">Front End:</p>
+            <div class="inline-flex rounded-md shadow-xs" role="group">
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-reactjs.webp"
+                  alt="ReactJS"
+                  class="size-10 mr-2"
+                />
+                ReactJS
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-vite.png"
+                  alt="Vite"
+                  class="size-10 mr-3"
+                  2
+                />
+                Vite
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-redux.svg"
+                  alt="Redux"
+                  class="size-10 mr-2"
+                />
+                Redux
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-html.png"
+                  alt="HTML"
+                  class="size-10 mr-3"
+                  2
+                />
+                HTML
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-css.png"
+                  alt="CSS"
+                  class="size-10 mr-3"
+                  2
+                />
+                CSS
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-bootstrap.png"
+                  alt="Bootstrap"
+                  class="size-10 mr-2"
+                />
+                Bootstrap
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-tailwind.png"
+                  alt="Tailwind"
+                  class="size-10 mr-2"
+                />
+                Tailwind
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-react-native.png"
+                  alt="React Native"
+                  class="size-10 mr-2"
+                />
+                React Native
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-apollo.svg"
+                  alt="Apollo Client"
+                  class="size-10 mr-2"
+                />
+                Apollo Client
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-nextjs.svg"
+                  alt="NextJS"
+                  class="size-10 mr-2"
+                />
+
+                NextJS
+              </button>
+            </div>
+          </div>
+          <div>
+            <p class="my-3">Back End:</p>
+            <div class="inline-flex rounded-md shadow-xs" role="group">
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-nodejs.svg"
+                  alt="NodeJS"
+                  class="size-10 mr-2"
+                />
+                NodeJS
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-express.png"
+                  alt="Express"
+                  class="size-10 mr-2"
+                />
+                Express
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-sequelize.png"
+                  alt="Sequelize"
+                  class="size-10 mr-2"
+                />
+                Sequelize
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-postgresql.png"
+                  alt="PostgreSQL"
+                  class="size-10 mr-2"
+                />
+                PostgreSQL
+              </button>
+
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-mongodb.png"
+                  alt="MongoDB"
+                  class="size-10 mr-2"
+                />
+                MongoDB
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-redis.svg"
+                  alt="Redis"
+                  class="size-10 mr-2"
+                />
+                Redis
+              </button>
+
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-graphql.png"
+                  alt="GraphQL"
+                  class="size-10 mr-2"
+                />
+                GraphQL
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-apollo.svg"
+                  alt="Apollo Server"
+                  class="size-10 mr-2"
+                />
+                Apollo Server
+              </button>
+              <button
+                type="button"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
+              >
+                <img
+                  src="./assets/icon-nextjs.svg"
+                  alt="NextJS"
+                  class="size-10 mr-2"
+                />
+
+                NextJS
+              </button>
+            </div>
+          </div>
         </div>
-        <p>More to come!</p>
       </div>
-      <!-- Carousel -->
-      <!-- <div
-        class="relative flex min-h-screen flex-col items-center justify-center"
-      >
-        <div
-          class="carousel scrollbar-hide flex w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth"
-          style="scroll-snap-align: start"
-        >
-          <div
-            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-blue-200 md:w-[calc(33.33%-(32px/3))]"
-          >
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="text-8xl font-bold text-white">1</div>
-            </div>
-          </div>
-
-          <div
-            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-purple-200 md:w-[calc(33.33%-(32px/3))]"
-          >
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="text-8xl font-bold text-white">2</div>
-            </div>
-          </div>
-
-          <div
-            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-green-200 md:w-[calc(33.33%-(32px/3))]"
-          >
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="text-8xl font-bold text-white">3</div>
-            </div>
-          </div>
-
-          <div
-            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-yellow-200 md:w-[calc(33.33%-(32px/3))]"
-          >
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="text-8xl font-bold text-white">4</div>
-            </div>
-          </div>
-
-          <div
-            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-red-200 md:w-[calc(33.33%-(32px/3))]"
-          >
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="text-8xl font-bold text-white">5</div>
-            </div>
-          </div>
-
-          <div
-            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-orange-200 md:w-[calc(33.33%-(32px/3))]"
-          >
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="text-8xl font-bold text-white">6</div>
-            </div>
-          </div>
-
-          <div
-            class="relative aspect-[1/1] w-[85%] shrink-0 snap-start snap-always rounded-xl bg-teal-200 md:w-[calc(33.33%-(32px/3))]"
-          >
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="text-8xl font-bold text-white">7</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pagination my-4 flex gap-2">
-          <span
-            class="h-3 w-3 ease-out duration-300 rounded-full bg-black w-8"
-          ></span>
-          <span
-            class="h-3 w-3 ease-out duration-300 rounded-full bg-black"
-          ></span>
-          <span
-            class="h-3 w-3 ease-out duration-300 rounded-full bg-black"
-          ></span>
-          <span
-            class="h-3 w-3 ease-out duration-300 rounded-full bg-black"
-          ></span>
-          <span
-            class="h-3 w-3 ease-out duration-300 rounded-full bg-black"
-          ></span>
-          <span
-            class="h-3 w-3 ease-out duration-300 rounded-full bg-black md:hidden"
-          ></span>
-          <span
-            class="h-3 w-3 ease-out duration-300 rounded-full bg-black md:hidden"
-          ></span>
-        </div>
-
-        <div>
-          <button class="prev-btn bg-gray-200 p-2">Prev</button>
-          <button class="next-btn bg-gray-200 p-2">Next</button>
-        </div>
-      </div> -->
     </section>
 
     <!-- Contact Section -->
