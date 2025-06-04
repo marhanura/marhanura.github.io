@@ -185,7 +185,7 @@ body {
 .second-wave {
   margin-top: -80px;
   background: #fff;
-  height: 100vh;
+  padding-bottom: 10%;
   clip-path: url(#wave);
 }
 
@@ -194,4 +194,5 @@ body {
   background: #f3f4f6;
   height: 50vh;
   clip-path: url(#wave);
+  padding-bottom: 5%;
 }
