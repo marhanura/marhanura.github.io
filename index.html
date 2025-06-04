@@ -210,683 +210,769 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-100">
+    <section id="projects" class="first-wave pt-16 bg-gray-100">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900 pt-16">
           Projects
         </h2>
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center px-16"
         >
-          <!-- StyleHack -->
+          <!-- StyleHack Card -->
           <div
-            class="group relative aspect-video hover:scale-105 transition-transform duration-300 overflow-hidden rounded-lg"
+            class="flex flex-col max-w-sm h-full group bg-white border border-gray-200 rounded-lg shadow-sm hover:scale-105 transition-transform duration-300 overflow-hidden"
           >
-            <img
-              class="w-full h-full object-cover rounded-lg"
-              src="./assets/ss-stylehack.png"
-              alt="StyleHack"
-            />
             <div
-              class="absolute inset-0 rounded-lg bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+              class="relative aspect-video transition-transform duration-300 overflow-hidden"
             >
-              <p class="font-bold text-xl text-black">StyleHack</p>
-              <div class="flex gap-3">
-                <a
-                  href="https://stylehack.vercel.app/"
-                  class="bg-[#0683B3] hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
-                  target="_blank"
-                  >Live</a
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/ss-stylehack.png"
+                alt="StyleHack"
+              />
+              <!-- Hover Tech Stack -->
+              <div
+                class="absolute inset-0 bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+              >
+                <p
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#313866] rounded-lg"
                 >
+                  Tech Stack:
+                </p>
+                <div class="flex justify-center items-center gap-2 flex-wrap">
+                  <img
+                    src="./assets/icon-nextjs.svg"
+                    alt="NextJS"
+                    class="h-5"
+                    data-tooltip-target="nextjs-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="nextjs-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    NextJS
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-mongodb.png"
+                    alt="MongoDB"
+                    class="h-5"
+                    data-tooltip-target="mongodb-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="mongodb-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    MongoDB
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-tailwind.png"
+                    alt="Tailwind"
+                    class="h-5"
+                    data-tooltip-target="tailwind-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="tailwind-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Tailwind CSS
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-groq.png"
+                    alt="Groq"
+                    class="h-5"
+                    data-tooltip-target="groq-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="groq-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Groq
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-langchain.png"
+                    alt="Langchain"
+                    class="h-5"
+                    data-tooltip-target="langchain-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="langchain-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Langchain
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-tavily.png"
+                    alt="Tavily"
+                    class="h-5"
+                    data-tooltip-target="tavily-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="tavily-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Tavily
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-cloudinary.png"
+                    alt="Cloudinary"
+                    class="h-5"
+                    data-tooltip-target="cloudinary-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="cloudinary-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Cloudinary
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-midtrans-notext.png"
+                    alt="Midtrans"
+                    class="h-5"
+                    data-tooltip-target="midtrans-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="midtrans-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Midtrans
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 p-5 flex-grow">
+              <h5 class="mb-2 text-2xl font-bold text-[#313866] tracking-wide">
+                StyleHack
+              </h5>
+              <p
+                class="mb-3 font-normal text-gray-700 dark:text-gray-400 flex-grow"
+              >
+                A web-based fashion application assisted by AI to generate a
+                style according to the user’s idea.
+              </p>
+              <!-- Card footer -->
+              <div class="flex flex-row gap-3 mt-auto">
+                <a
+                  href="https://stylehack.vercel.app"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#313866] rounded-lg hover:bg-black transition duration-300"
+                >
+                  View Live
+                </a>
                 <a
                   href="https://github.com/marhanura/stylehack"
-                  class="bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
-                  target="_blank"
-                  >Code</a
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-500 rounded-lg hover:bg-black transition duration-300"
                 >
-              </div>
-              <div class="flex justify-center items-center gap-2 flex-wrap">
-                <img
-                  src="./assets/icon-nextjs.svg"
-                  alt="NextJS"
-                  class="h-5"
-                  data-tooltip-target="nextjs-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="nextjs-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  NextJS
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-mongodb.png"
-                  alt="MongoDB"
-                  class="h-5"
-                  data-tooltip-target="mongodb-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="mongodb-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  MongoDB
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-tailwind.png"
-                  alt="Tailwind"
-                  class="h-5"
-                  data-tooltip-target="tailwind-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="tailwind-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Tailwind CSS
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-groq.png"
-                  alt="Groq"
-                  class="h-5"
-                  data-tooltip-target="groq-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="groq-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Groq
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-langchain.png"
-                  alt="Langchain"
-                  class="h-5"
-                  data-tooltip-target="langchain-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="langchain-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Langchain
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-tavily.png"
-                  alt="Tavily"
-                  class="h-5"
-                  data-tooltip-target="tavily-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="tavily-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Tavily
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-cloudinary.png"
-                  alt="Cloudinary"
-                  class="h-5"
-                  data-tooltip-target="cloudinary-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="cloudinary-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Cloudinary
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-midtrans-notext.png"
-                  alt="Midtrans"
-                  class="h-5"
-                  data-tooltip-target="midtrans-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="midtrans-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Midtrans
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
+                  Code
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- CottonBud -->
+          <!-- CottonBud Card -->
           <div
-            class="group relative aspect-video hover:scale-105 transition-transform duration-300 overflow-hidden rounded-lg"
+            class="h-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm hover:scale-105 transition-transform duration-300 overflow-hidden"
           >
-            <img
-              class="w-full h-full object-cover rounded-lg"
-              src="./assets/ss-cottonbud.png"
-              alt="CottonBud"
-            />
             <div
-              class="absolute inset-0 rounded-lg bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+              class="group relative aspect-video transition-transform duration-300 overflow-hidden"
             >
-              <p class="font-bold text-xl text-black">CottonBud</p>
-              <div class="flex gap-3">
-                <a
-                  href="https://cottonbudgc.vercel.app/"
-                  class="bg-[#0683B3] hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
-                  target="_blank"
-                  >Live</a
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/ss-cottonbud.png"
+                alt="CottonBud"
+              />
+              <!-- Hover Tech Stack -->
+              <div
+                class="absolute inset-0 bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+              >
+                <p
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#313866] rounded-lg"
                 >
+                  Tech Stack:
+                </p>
+                <div class="flex justify-center items-center gap-2 flex-wrap">
+                  <img
+                    src="./assets/icon-nextjs.svg"
+                    alt="NextJS"
+                    class="h-5"
+                    data-tooltip-target="nextjs-2"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="nextjs-2"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    NextJS
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-mongodb.png"
+                    alt="MongoDB"
+                    class="h-5"
+                    data-tooltip-target="mongodb-2"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="mongodb-2"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    MongoDB
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-tailwind.png"
+                    alt="Tailwind"
+                    class="h-5"
+                    data-tooltip-target="tailwind-2"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="tailwind-2"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Tailwind CSS
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 p-5">
+              <h5 class="mb-2 text-2xl font-bold text-[#313866] tracking-wide">
+                CottonBud
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                A web-based clothing store where user can add product to
+                wishlist.
+              </p>
+              <div class="flex flex-row gap-3">
+                <a
+                  href="https://cottonbudgc.vercel.app"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#313866] rounded-lg hover:bg-black transition duration-300"
+                >
+                  View Live
+                </a>
                 <a
                   href="https://github.com/marhanura/cottonbud"
-                  class="bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
-                  target="_blank"
-                  >Code</a
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-500 rounded-lg hover:bg-black transition duration-300"
                 >
-              </div>
-
-              <div class="flex justify-center items-center gap-2 flex-wrap">
-                <img
-                  src="./assets/icon-nextjs.svg"
-                  alt="NextJS"
-                  class="h-5"
-                  data-tooltip-target="nextjs-2"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="nextjs-2"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  NextJS
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-mongodb.png"
-                  alt="MongoDB"
-                  class="h-5"
-                  data-tooltip-target="mongodb-2"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="mongodb-2"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  MongoDB
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-tailwind.png"
-                  alt="Tailwind"
-                  class="h-5"
-                  data-tooltip-target="tailwind-2"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="tailwind-2"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Tailwind CSS
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
+                  Code
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- Zehat -->
+          <!-- Zehat Card -->
           <div
-            class="group relative aspect-video hover:scale-105 transition-transform duration-300 overflow-hidden rounded-lg"
+            class="h-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm hover:scale-105 transition-transform duration-300 overflow-hidden"
           >
-            <img
-              class="w-full h-full object-cover rounded-lg"
-              src="./assets/ss-zehat.png"
-              alt="Third Project"
-            />
             <div
-              class="absolute inset-0 rounded-lg bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+              class="group relative aspect-video transition-transform duration-300 overflow-hidden"
             >
-              <p class="font-bold text-xl text-black">Zehat</p>
-              <div class="flex gap-3">
-                <a
-                  href="https://zehat-ip.web.app/"
-                  class="bg-[#0683B3] hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
-                  target="_blank"
-                  >Live</a
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/ss-zehat.png"
+                alt="Zehat"
+              />
+              <!-- Hover Tech Stack -->
+              <div
+                class="absolute inset-0 bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+              >
+                <p
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#313866] rounded-lg"
                 >
+                  Tech Stack:
+                </p>
+                <div class="flex justify-center items-center gap-2 flex-wrap">
+                  <img
+                    src="./assets/icon-reactjs.webp"
+                    alt="ReactJS"
+                    class="h-5"
+                    data-tooltip-target="reactjs-2"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="reactjs-2"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    ReactJS
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-vite.png"
+                    alt="Vite"
+                    class="h-5"
+                    data-tooltip-target="vite-2"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="vite-2"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Vite
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-express.png"
+                    alt="Express"
+                    class="h-5"
+                    data-tooltip-target="express-2"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="express-2"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Express
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-gemini.png"
+                    alt="Gemini AI"
+                    class="h-5"
+                    data-tooltip-target="gemini-2"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="gemini-2"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Gemini AI
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-aws.webp"
+                    alt="AWS"
+                    class="h-5"
+                    data-tooltip-target="aws-2"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="aws-2"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    AWS
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-firebase.png"
+                    alt="Firebase"
+                    class="h-5"
+                    data-tooltip-target="firebase-2"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="firebase-2"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Firebase
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-tailwind.png"
+                    alt="Tailwind"
+                    class="h-5"
+                    data-tooltip-target="tailwind-3"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="tailwind-3"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Tailwind CSS
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-sequelize.png"
+                    alt="Sequelize"
+                    class="h-5"
+                    data-tooltip-target="sequelize"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="sequelize"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Sequelize
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-postgresql.png"
+                    alt="PostgreSQL"
+                    class="h-5"
+                    data-tooltip-target="postgresql"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="postgresql"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    PostgreSQL
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 p-5">
+              <h5 class="mb-2 text-2xl font-bold text-[#313866] tracking-wide">
+                Zehat
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                AI-empowered web application to help health workers to diagnose
+                patient’s illness and manage prescription.
+              </p>
+              <div class="flex flex-row gap-3">
+                <a
+                  href="https://zehat-ip.web.app"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#313866] rounded-lg hover:bg-black transition duration-300"
+                >
+                  View Live
+                </a>
                 <a
                   href="https://github.com/marhanura/IP-HCK81"
-                  class="bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
-                  target="_blank"
-                  >Code</a
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-500 rounded-lg hover:bg-black transition duration-300"
                 >
-              </div>
-
-              <div class="flex justify-center items-center gap-2 flex-wrap">
-                <img
-                  src="./assets/icon-reactjs.webp"
-                  alt="ReactJS"
-                  class="h-5"
-                  data-tooltip-target="reactjs-2"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="reactjs-2"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  ReactJS
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-vite.png"
-                  alt="Vite"
-                  class="h-5"
-                  data-tooltip-target="vite-2"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="vite-2"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Vite
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-express.png"
-                  alt="Express"
-                  class="h-5"
-                  data-tooltip-target="express-2"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="express-2"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Express
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-gemini.png"
-                  alt="Gemini AI"
-                  class="h-5"
-                  data-tooltip-target="gemini-2"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="gemini-2"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Gemini AI
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-aws.webp"
-                  alt="AWS"
-                  class="h-5"
-                  data-tooltip-target="aws-2"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="aws-2"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  AWS
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-firebase.png"
-                  alt="Firebase"
-                  class="h-5"
-                  data-tooltip-target="firebase-2"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="firebase-2"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Firebase
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-tailwind.png"
-                  alt="Tailwind"
-                  class="h-5"
-                  data-tooltip-target="tailwind-3"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="tailwind-3"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Tailwind CSS
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-sequelize.png"
-                  alt="Sequelize"
-                  class="h-5"
-                  data-tooltip-target="sequelize"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="sequelize"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Sequelize
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-postgresql.png"
-                  alt="PostgreSQL"
-                  class="h-5"
-                  data-tooltip-target="postgresql"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="postgresql"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  PostgreSQL
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
+                  Code
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- Thumblr -->
+          <!-- Thumblr Card -->
           <div
-            class="group relative aspect-video hover:scale-105 transition-transform duration-300 overflow-hidden rounded-lg"
+            class="h-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm hover:scale-105 transition-transform duration-300 overflow-hidden"
           >
-            <img
-              class="w-full h-full object-cover rounded-lg"
-              src="./assets/ss-thumblr.png"
-              alt="Third Project"
-            />
             <div
-              class="absolute inset-0 rounded-lg bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+              class="group relative aspect-video transition-transform duration-300 overflow-hidden"
             >
-              <p class="font-bold text-xl text-black">Thumblr</p>
-              <div class="flex gap-3">
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/ss-thumblr.png"
+                alt="Thumblr"
+              />
+              <!-- Hover Tech Stack -->
+              <div
+                class="absolute inset-0 bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+              >
+                <p
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#313866] rounded-lg"
+                >
+                  Tech Stack:
+                </p>
+                <div class="flex justify-center items-center gap-2 flex-wrap">
+                  <img
+                    src="./assets/icon-react-native.png"
+                    alt="React Native"
+                    class="h-5"
+                    data-tooltip-target="react-native"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="react-native"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    React Native
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-expo.png"
+                    alt="Expo"
+                    class="h-5"
+                    data-tooltip-target="expo"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="expo"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Expo
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-apollo.svg"
+                    alt="Apollo Server & Client"
+                    class="h-5"
+                    data-tooltip-target="apollo"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="apollo"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Apollo Server & Client
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-mongodb.png"
+                    alt="MongoDB"
+                    class="h-5"
+                    data-tooltip-target="mongodb-3"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="mongodb-3"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    MongoDB
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-redis.svg"
+                    alt="Redis"
+                    class="h-5"
+                    data-tooltip-target="redis"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="redis"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Redis
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 p-5">
+              <h5 class="mb-2 text-2xl font-bold text-[#313866] tracking-wide">
+                Thumblr
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Tumblr-like social media mobile app where user can share,
+                comment, and like posts.
+              </p>
+              <div class="flex flex-row gap-3">
                 <a
                   href="https://expo.dev/preview/update?message=Fix%3A%20Navigate%20to%20user&updateRuntimeVersion=1.0.0&createdAt=2025-04-20T14%3A09%3A45.355Z&slug=exp&projectId=0783494a-8006-4ab3-85c0-1f373b9ad91a&group=39bab19a-5a7a-4c07-87a5-c5d7be7b1e7c"
-                  class="bg-[#0683B3] hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Live</a
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#313866] rounded-lg hover:bg-black transition duration-300"
                 >
+                  View Live
+                </a>
                 <a
                   href="https://github.com/marhanura/thumblr"
-                  class="bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Code</a
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-500 rounded-lg hover:bg-black transition duration-300"
                 >
-              </div>
-
-              <div class="flex justify-center items-center gap-2 flex-wrap">
-                <img
-                  src="./assets/icon-react-native.png"
-                  alt="React Native"
-                  class="h-5"
-                  data-tooltip-target="react-native"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="react-native"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  React Native
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-expo.png"
-                  alt="Expo"
-                  class="h-5"
-                  data-tooltip-target="expo"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="expo"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Expo
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-apollo.svg"
-                  alt="Apollo Server & Client"
-                  class="h-5"
-                  data-tooltip-target="apollo"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="apollo"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Apollo Server & Client
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-mongodb.png"
-                  alt="MongoDB"
-                  class="h-5"
-                  data-tooltip-target="mongodb-3"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="mongodb-3"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  MongoDB
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-redis.svg"
-                  alt="Redis"
-                  class="h-5"
-                  data-tooltip-target="redis"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="redis"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Redis
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
+                  Code
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- Yahoot -->
+          <!-- Yahoot Card -->
           <div
-            class="group relative aspect-video hover:scale-105 transition-transform duration-300 overflow-hidden rounded-lg"
+            class="h-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm hover:scale-105 transition-transform duration-300 overflow-hidden"
           >
-            <img
-              class="w-full h-full object-cover rounded-lg"
-              src="./assets/ss-yahoot.png"
-              alt="Third Project"
-            />
             <div
-              class="absolute inset-0 rounded-lg bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+              class="group relative aspect-video transition-transform duration-300 overflow-hidden"
             >
-              <p class="font-bold text-xl text-black">Yahoot</p>
-              <div class="flex gap-3">
-                <a
-                  href="https://tomsushi81.web.app/"
-                  class="bg-[#0683B3] hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
-                  target="_blank"
-                  >Live</a
+              <img
+                class="w-full h-full object-cover"
+                src="./assets/ss-yahoot.png"
+                alt="Yahoot!"
+              />
+              <!-- Hover Tech Stack -->
+              <div
+                class="absolute inset-0 bg-white opacity-0 hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center gap-4 p-4"
+              >
+                <p
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#313866] rounded-lg"
                 >
+                  Tech Stack:
+                </p>
+                <div class="flex justify-center items-center gap-2 flex-wrap">
+                  <img
+                    src="./assets/icon-reactjs.webp"
+                    alt="ReactJS"
+                    class="h-5"
+                    data-tooltip-target="reactjs-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="reactjs-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    ReactJS
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-vite.png"
+                    alt="Vite"
+                    class="h-5"
+                    data-tooltip-target="vite-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="vite-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Vite
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-express.png"
+                    alt="Express"
+                    class="h-5"
+                    data-tooltip-target="express-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="express-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Express
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-gemini.png"
+                    alt="Gemini AI"
+                    class="h-5"
+                    data-tooltip-target="gemini-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="gemini-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Gemini AI
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-aws.webp"
+                    alt="AWS"
+                    class="h-5"
+                    data-tooltip-target="aws-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="aws-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    AWS
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+
+                  <img
+                    src="./assets/icon-firebase.png"
+                    alt="Firebase"
+                    class="h-5"
+                    data-tooltip-target="firebase-1"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="firebase-1"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Firebase
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                  <img
+                    src="./assets/icon-socketio.webp"
+                    alt="Socket.io"
+                    class="h-5"
+                    data-tooltip-target="socketio"
+                    data-tooltip-placement="bottom"
+                  />
+                  <div
+                    id="socketio"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+                  >
+                    Socket.io
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 p-5">
+              <h5 class="mb-2 text-2xl font-bold text-[#313866] tracking-wide">
+                Yahoot!
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                A web-based app real-time multiplayer quiz game with
+                leaderboard.
+              </p>
+              <div class="flex flex-row gap-3">
+                <a
+                  href="https://tomsushi81.web.app"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#313866] rounded-lg hover:bg-black transition duration-300"
+                >
+                  View Live
+                </a>
                 <a
                   href="https://github.com/hck81-TomSushi"
-                  class="bg-gray-500 hover:bg-black text-white px-4 py-2 rounded-lg text-sm font-medium"
-                  target="_blank"
-                  >Code</a
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-500 rounded-lg hover:bg-black transition duration-300"
                 >
-              </div>
-
-              <!-- Yahoot Project Tech Stack -->
-              <div class="flex justify-center items-center gap-2 flex-wrap">
-                <img
-                  src="./assets/icon-reactjs.webp"
-                  alt="ReactJS"
-                  class="h-5"
-                  data-tooltip-target="reactjs-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="reactjs-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  ReactJS
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-vite.png"
-                  alt="Vite"
-                  class="h-5"
-                  data-tooltip-target="vite-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="vite-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Vite
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-express.png"
-                  alt="Express"
-                  class="h-5"
-                  data-tooltip-target="express-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="express-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Express
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-gemini.png"
-                  alt="Gemini AI"
-                  class="h-5"
-                  data-tooltip-target="gemini-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="gemini-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Gemini AI
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-aws.webp"
-                  alt="AWS"
-                  class="h-5"
-                  data-tooltip-target="aws-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="aws-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  AWS
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-
-                <img
-                  src="./assets/icon-firebase.png"
-                  alt="Firebase"
-                  class="h-5"
-                  data-tooltip-target="firebase-1"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="firebase-1"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Firebase
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-                <img
-                  src="./assets/icon-socketio.webp"
-                  alt="Socket.io"
-                  class="h-5"
-                  data-tooltip-target="socketio"
-                  data-tooltip-placement="bottom"
-                />
-                <div
-                  id="socketio"
-                  role="tooltip"
-                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
-                >
-                  Socket.io
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
+                  Code
+                </a>
               </div>
             </div>
           </div>
@@ -895,7 +981,13 @@
     </section>
 
     <!-- Skill Section -->
-    <section id="skill" class="py-16 bg-white">
+    <section id="skill" class="second-wave px-16 bg-white">
+      <svg>
+        <clipPath id="wave" clipPathUnits="objectBoundingBox">
+          <path class="st0" d="M1,0c0,0-0.3,0.1-0.5,0.1S0.3,0,0,0.1V1h1L1,0z" />
+        </clipPath>
+      </svg>
+
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-8 text-gray-900">Skills</h2>
         <div class="flex flex-col my-5 gap-5">
@@ -909,7 +1001,7 @@
                 <img
                   src="./assets/icon-js.png"
                   alt="JavaScript"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 JavaScript
               </button>
@@ -920,7 +1012,7 @@
                 <img
                   src="./assets/icon-ts.svg"
                   alt="TypeScript"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 TypeScript
               </button>
@@ -936,7 +1028,7 @@
                 <img
                   src="./assets/icon-reactjs.webp"
                   alt="ReactJS"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 ReactJS
               </button>
@@ -947,7 +1039,7 @@
                 <img
                   src="./assets/icon-vite.png"
                   alt="Vite"
-                  class="size-10 mr-3"
+                  class="h-8 mr-3"
                   2
                 />
                 Vite
@@ -959,7 +1051,7 @@
                 <img
                   src="./assets/icon-redux.svg"
                   alt="Redux"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 Redux
               </button>
@@ -970,7 +1062,7 @@
                 <img
                   src="./assets/icon-html.png"
                   alt="HTML"
-                  class="size-10 mr-3"
+                  class="h-8 mr-3"
                   2
                 />
                 HTML
@@ -979,12 +1071,7 @@
                 type="button"
                 class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-l-none border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
               >
-                <img
-                  src="./assets/icon-css.png"
-                  alt="CSS"
-                  class="size-10 mr-3"
-                  2
-                />
+                <img src="./assets/icon-css.png" alt="CSS" class="h-8 mr-3" 2 />
                 CSS
               </button>
               <button
@@ -994,7 +1081,7 @@
                 <img
                   src="./assets/icon-bootstrap.png"
                   alt="Bootstrap"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 Bootstrap
               </button>
@@ -1005,7 +1092,7 @@
                 <img
                   src="./assets/icon-tailwind.png"
                   alt="Tailwind"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 Tailwind
               </button>
@@ -1016,7 +1103,7 @@
                 <img
                   src="./assets/icon-react-native.png"
                   alt="React Native"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 React Native
               </button>
@@ -1027,7 +1114,7 @@
                 <img
                   src="./assets/icon-apollo.svg"
                   alt="Apollo Client"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 Apollo Client
               </button>
@@ -1038,7 +1125,7 @@
                 <img
                   src="./assets/icon-nextjs.svg"
                   alt="NextJS"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
 
                 NextJS
@@ -1055,7 +1142,7 @@
                 <img
                   src="./assets/icon-nodejs.svg"
                   alt="NodeJS"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 NodeJS
               </button>
@@ -1066,7 +1153,7 @@
                 <img
                   src="./assets/icon-express.png"
                   alt="Express"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 Express
               </button>
@@ -1077,7 +1164,7 @@
                 <img
                   src="./assets/icon-sequelize.png"
                   alt="Sequelize"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 Sequelize
               </button>
@@ -1088,7 +1175,7 @@
                 <img
                   src="./assets/icon-postgresql.png"
                   alt="PostgreSQL"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 PostgreSQL
               </button>
@@ -1100,7 +1187,7 @@
                 <img
                   src="./assets/icon-mongodb.png"
                   alt="MongoDB"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 MongoDB
               </button>
@@ -1111,7 +1198,7 @@
                 <img
                   src="./assets/icon-redis.svg"
                   alt="Redis"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 Redis
               </button>
@@ -1123,7 +1210,7 @@
                 <img
                   src="./assets/icon-graphql.png"
                   alt="GraphQL"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 GraphQL
               </button>
@@ -1134,7 +1221,7 @@
                 <img
                   src="./assets/icon-apollo.svg"
                   alt="Apollo Server"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
                 Apollo Server
               </button>
@@ -1145,7 +1232,7 @@
                 <img
                   src="./assets/icon-nextjs.svg"
                   alt="NextJS"
-                  class="size-10 mr-2"
+                  class="h-8 mr-2"
                 />
 
                 NextJS
@@ -1157,7 +1244,12 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-100">
+    <section id="contact" class="third-wave bg-gray-100">
+      <svg>
+        <clipPath id="wave" clipPathUnits="objectBoundingBox">
+          <path class="st0" d="M1,0c0,0-0.3,0.1-0.5,0.1S0.3,0,0,0.1V1h1L1,0z" />
+        </clipPath>
+      </svg>
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-8 text-gray-900">Contact</h2>
         <div class="flex justify-center items-center gap-4">
@@ -1179,82 +1271,6 @@
         </div>
       </div>
     </section>
-    <script>
-      const container = document.querySelector(".carousel");
-      const slides = document.querySelectorAll(".carousel > div");
-      const dots = document.querySelectorAll(".pagination > span");
-      const prevBtn = document.querySelector(".prev-btn");
-      const nextBtn = document.querySelector(".next-btn");
-
-      const breakpoint = 768;
-      const slidesPerPage = 3;
-      const totalSlidesCount = slides.length;
-      // Mobile stuff
-      let touchStartX = 0;
-      let touchEndX = 0;
-
-      // Previous
-      prevBtn.addEventListener("click", () => {
-        container.scrollBy({
-          left: -slides[0].offsetWidth,
-          behavior: "smooth",
-        });
-        const centerSlideIndex = getCenterSlideIndex() - 1;
-        updateActiveDot(centerSlideIndex);
-      });
-
-      // Next
-      nextBtn.addEventListener("click", () => {
-        container.scrollBy({ left: slides[0].offsetWidth, behavior: "smooth" });
-        const centerSlideIndex = getCenterSlideIndex() + 1;
-        updateActiveDot(centerSlideIndex);
-      });
-
-      // Mobile
-      container.addEventListener("touchstart", (event) => {
-        touchStartX = event.touches[0].clientX;
-      });
-
-      container.addEventListener("touchmove", (event) => {
-        touchEndX = event.touches[0].clientX;
-      });
-
-      container.addEventListener("touchend", () => {
-        let centerSlideIndex;
-        const swipeThreshold = 50;
-
-        if (touchStartX - touchEndX > swipeThreshold) {
-          centerSlideIndex = getCenterSlideIndex() + 1;
-        } else {
-          centerSlideIndex = getCenterSlideIndex() - 1;
-        }
-
-        updateActiveDot(centerSlideIndex);
-        touchStartX = 0;
-        touchEndX = 0;
-      });
-
-      function updateActiveDot(centerSlideIndex) {
-        const isMobileView = container.offsetWidth <= breakpoint;
-        const dotsCount = isMobileView ? dots.length : dots.length - 2;
-        const slidesCount = isMobileView ? 1 : dotsCount - slidesPerPage;
-        const pageIndex = centerSlideIndex - slidesCount;
-        if (pageIndex >= 0 && pageIndex < dotsCount) {
-          dots.forEach((dot) => dot.classList.remove("w-8"));
-          dots[pageIndex].classList.add("w-8");
-        }
-      }
-
-      function getCenterSlideIndex() {
-        const slideWidth = slides[0].offsetWidth;
-        const containerWidth = container.offsetWidth;
-        const centerSlideIndex = Math.round(
-          (container.scrollLeft + Math.floor(containerWidth / 2)) / slideWidth
-        );
-        return centerSlideIndex;
-      }
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   </body>
 </html>
